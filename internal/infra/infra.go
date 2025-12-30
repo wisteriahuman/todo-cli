@@ -2,10 +2,26 @@ package infra
 
 import (
 	"database/sql"
+	"os"
+	"path/filepath"
 )
 
 type DB struct {
 	*sql.DB
+}
+
+func DefaultDBPath() (string, error) {
+	configDir, err := os.UserConfigDir()
+	if err != nil {
+		return "", err
+	}
+
+	appDir := filepath.Join(configDir, "todo-cli")
+	if err := os.MkdirAll(appDir, 0755); err != nil {
+		return "", err
+	}
+
+	return filepath.Join(appDir, "todo.db"), nil
 }
 
 func New(dbPath string) (*DB, error) {

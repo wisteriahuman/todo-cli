@@ -11,7 +11,12 @@ import (
 var uc *usecase.TodoUsecase
 
 func main() {
-	db, err := infra.New("todo.db")
+	dbPath, err := infra.DefaultDBPath()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	db, err := infra.New(dbPath)
 	if err != nil {
 		log.Fatal(err)
 	}

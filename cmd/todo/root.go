@@ -4,4 +4,4 @@ import "github.com/spf13/cobra"
 
 var rootCmd = &cobra.Command{
 	Use:   "todo",
-	Short: "Todo CLIアプリ"}
+	Short: "CLI Todoアプリ"}

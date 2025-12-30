@@ -18,6 +18,12 @@ CLI Todoアプリ
 
 ## Installation
 
+### Homebrew (macOS / Linux)
+
+```bash
+brew install wisteriahuman/tap/todo-cli
+```
+
 ### go install
 
 ```bash

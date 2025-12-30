@@ -1,0 +1,4 @@
+todo
+todo.db
+# Added by goreleaser init:
+dist/

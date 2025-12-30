@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/github/license/wisteriahuman/todo-cli)](LICENSE)
 [![Release](https://img.shields.io/github/v/release/wisteriahuman/todo-cli)](https://github.com/wisteriahuman/todo-cli/releases)
 
-シンプルで高機能なCLI Todoアプリ
+CLI Todoアプリ
 
 ## Features
 
